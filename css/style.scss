@@ -489,3 +489,61 @@ a:hover {
         }
     }
 }
+.how-item {
+    position: relative;
+    i {
+        position: absolute;
+    }
+    p {
+        margin-left: 2em;
+    }
+}
+
+@media(max-width: 992px) {
+    nav {
+        background: #004662;
+        color: white !important;
+        .navbar-nav .nav-item {
+            margin-left: 0em;
+        }
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link {
+        color: #f1f1f1;
+    }
+
+    .kid-img {
+        width: 100%;
+    }
+    .mid-section {
+        flex-direction: column-reverse;
+        min-height: auto;
+        margin-bottom: 1em;
+
+        .mid-section-right {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .quiz-banner {
+        position: static;
+        margin: 0;
+        padding: 0%;
+        width: 100%;
+    }
+    
+    .hero-img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .mid-section-summary {
+        flex-direction: column;
+    }
+    .banner-padding {
+        padding: 1.5em;
+    }
+}
