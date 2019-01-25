@@ -676,7 +676,7 @@ nav .navbar-nav .nav-link.login {
 }
 
 .pry-color {
-  color: #00455e;
+  color: #00455e !important;
 }
 
 .d-flex-column {
@@ -907,6 +907,24 @@ a:hover {
   width: 200px;
   height: 0.8em;
   margin-left: 1em;
+}
+
+.answers-tab {
+  padding: 2em 0;
+}
+.answers-tab .answers-list .a-no {
+  margin-right: 2em;
+  color: #ccc;
+  position: absolute;
+}
+.answers-tab .answers-list p {
+  margin-left: 3em;
+}
+.answers-tab .answers-list .col-md-7 {
+  position: relative;
+}
+.answers-tab .answers-list .row {
+  margin-bottom: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */
