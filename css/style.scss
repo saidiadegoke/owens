@@ -288,17 +288,33 @@ nav {
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: hidden;
 }
 .login-form {
     background-color: white;
+    display: flex;
     position: absolute;
-    top: 2em;
-    right: 2em;
     bottom: 2em;
+    top: 2em;
     left: 2em;
+    right: 2em;
+    padding: 1em;
+}
+.login-form-wrapper {
+    padding: 1em;
+    overflow-y: scroll;
+    display: flex;
+    flex: 1;
 }
 .fit {
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.mfit {
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -368,6 +384,10 @@ nav {
     color: #000;
     text-shadow: 0 1px 0 #fff;
     opacity: .5;
+    position: absolute;
+    right: 1em;
+    top: 2em;
+    z-index: 100;
 }
 .quiz-wrapper {
     background-color: #f2f2f2;
@@ -498,6 +518,13 @@ a:hover {
         margin-left: 2em;
     }
 }
+.showOnMobile {
+    display: none;
+}
+.modal-dialog {
+    max-width: 95%;
+    width: 70%;
+}
 
 @media(max-width: 992px) {
     nav {
@@ -546,5 +573,153 @@ a:hover {
     }
     .banner-padding {
         padding: 1.5em;
+    }
+    .fit {
+        position: relative;
+    }
+    .showOnMobile {
+        display: flex;
+    }
+    .quiz-wrapper {
+        display: flex;
+        background-color: #f2f2f2;
+    
+        .sidebar {
+            background-color: #564d4f;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: auto;
+            display: none;
+    
+            .profile-tray {
+                padding: 3.4em 0;
+                color: white;
+    
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    border: 1px solid #777;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+        }
+        .quiz-page {
+            margin-left: 0px;
+            min-height: auto;
+            padding: 1em;
+            width: 100%;
+            background-color: #f2f2f2;
+        }
+    }
+    .mt-10 {
+        margin-top: 5em;
+    }
+    .display-5 {
+        font-size: 2.0rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-6 {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .mt-5 {
+        margin-top: 1em !important;
+    }
+    .hero-img {
+        height: 220px;
+        margin-top: -32px;
+    }
+    .lead1 {
+        font-size: 1.45rem;
+        font-weight: 300;
+    }
+    .lead3 {
+        font-size: 1.10rem;
+        font-weight: 200;
+    }
+    .lead2 {
+        font-size: 1.6rem;
+        font-weight: 200;
+        .fas {
+            width: 50px;
+            color: #777;
+            margin-right: 1em;
+        }
+    }
+    
+    .bold2 {
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+    .gap1 {
+        display: block;
+        width: 100%;
+        height: 100px;
+        clear: both;
+    }
+    .gap3 {
+        display: block;
+        width: 100%;
+        height: 50px;
+        clear: both;
+    }
+    .gap2 {
+        display: block;
+        width: 100%;
+        height: 200px;
+        clear: both;
+    }
+    .question-footer {
+        flex-direction: column;
+        a {
+            width: 100%;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+    #nav-tab {
+        background-color: white;
+        a {
+            font-size: .6em;
+            flex: 1;
+        }
+    }
+    .login-form {
+        bottom: 1em;
+        top: 1em;
+        left: 1em;
+        right: 1em;
+        padding: 1em;
+    }
+    .login-form-content {
+        flex-direction: column;
+        flex: 1;
+        margin: 0.2em;
+    
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #d1d1d1;
+            border-radius: 0;
+            padding-left: 0;
+        }
+    
+        form {
+            margin-right: 0%;
+        }
+    }
+    .hideOnMobile {
+        display: none !important;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 95%;
+        width: 95%;
     }
 }
