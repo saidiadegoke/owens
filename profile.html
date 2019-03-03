@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>90 Min Show - Profile</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light showOnMobile">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarText">
+              <ul class="navbar-nav ml-auto order-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link login" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <div class="quiz-wrapper fit">
+            <section class="sidebar">
+              <div class="profile-tray text-center">
+                <img src="images/login-bn1.jpg">
+                <p class="my-4 font-weight-lighter">Jason Abulu</p>
+              </div>
+
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                  <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active"><i class="fas fa-user"></i> Profile</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cog"></i> Settings</i></a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sign-out-alt"></i> Logout</i></a>
+              </div>
+            </section>
+            <section class="quiz-page">
+                <div class="rounded-box d-flex justify-content-space-between align-items-center">
+                  <div class="fs-normal">
+                    <a class="">Profile</a>
+                  </div>
+                  <p class="fs-small mb-0">Friday 17th, January 2019</p>
+                </div>
+
+                <div class="rounded-box question mt-5">
+                  <div class="question-body p-md-5 p-sm-2">
+                      <div class="row align-items-center">
+                          <div class="col-md-6 text-center">
+                            <h4>Hi, Jason</h4>
+                            <p>Your ranking is:</p>
+                            <em class="pscore">398</em>
+                            <div class="mt-5"></div>
+                            <a href="#" class="pry-color" data-toggle="modal" data-target="#myModal"><i class="fas fa-list-ol"></i>View Leaderboard</a>
+                          </div>
+
+                          <div class="col-md-6 pt-5">
+                            <div class="pbox-wrapper">
+                                      <div class="pbox pbox-green">
+                                        <a href="#">Edit Profile</a>
+                                    </div>
+                                
+                                    <div class="pbox pbox-red">
+                                        <a href="#">Manage Account</a>
+                                    </div>
+                                </div>
+                                <div class="pbox-wrapper">
+                                    <div class="pbox pbox-purple">
+                                        <a href="#">Subscriptions</a>
+                                    </div>
+                                  
+                                    <div class="pbox pbox-blue">
+                                        <a href="#">Quiz History</a>
+                                    </div>
+                              </div>
+
+                          </div>
+                          
+                      </div>
+                    
+                  </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog leaderboard">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div>
+                      <h4 class="modal-title">The Leaderboard</h4>
+                      <p class="fs-small mb-0">Friday 17th, January 2019</p>
+                      </div>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-responsive1">
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Name</th>
+                                <th>Games Played</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Ayeeshat Adeyanju</td>
+                                <td>12</td>
+                                <td>2132</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Ayeeshat Adeyanju</td>
+                                <td>12</td>
+                                <td>2132</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Ayeeshat Adeyanju</td>
+                                <td>12</td>
+                                <td>2132</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Ayeeshat Adeyanju</td>
+                                <td>12</td>
+                                <td>2132</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <!--div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div-->
+                  </div>
+              
+                </div>
+              </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

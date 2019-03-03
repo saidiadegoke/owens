@@ -901,6 +901,76 @@ a:hover {
   width: 70%;
 }
 
+.pbox-wrapper {
+  display: block;
+  justify-content: center;
+}
+
+.pbox {
+  display: flex;
+  border-radius: 5px;
+  color: white;
+  width: 150px;
+  height: 150px;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 1em;
+  float: left;
+}
+
+.pbox a {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.pscore {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.pbox-green {
+  background-color: #61ac68;
+}
+
+.pbox-red {
+  background-color: #a22c46;
+}
+
+.pbox-purple {
+  background-color: #7d0888;
+}
+
+.pbox-blue {
+  background-color: #2955a3;
+}
+
+.modal-dialog .modal-content {
+  padding: 2em;
+}
+
+.profileForm {
+  width: 75%;
+  margin: 2em auto;
+}
+.profileForm input, .profileForm select {
+  border: none;
+  border-bottom: 1px #ccc solid;
+  font-size: 0.8em;
+  border-radius: 0;
+}
+.profileForm .form-group {
+  margin-bottom: 1.5em;
+}
+
+.red-bg {
+  background-color: red;
+}
+
 @media (max-width: 992px) {
   nav {
     background: #004662;
@@ -910,8 +980,40 @@ a:hover {
     margin-left: 0em;
   }
 
+  .profileForm {
+    width: 95%;
+  }
+
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link {
     color: #f1f1f1;
+  }
+
+  .modal-dialog .modal-content {
+    padding: 0.5em;
+  }
+
+  .modal-dialog.leaderboard {
+    width: 95%;
+  }
+
+  .pbox {
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0.5em;
+    float: left;
+  }
+
+  .pbox a {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    margin-bottom: 1em;
   }
 
   .kid-img {
