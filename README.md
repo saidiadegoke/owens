@@ -18,3 +18,8 @@ The HTML files live inside the root folder. Do not create any new folder!
 The CSS files live inside the css folder inside the root folder. You write new CSS by creating a new .css file and importing into the main style.scss file.  
 
 You'll write your CSS using the SCSS syntax.
+
+The project contains many sample HTML and CSS files as a guide.
+
+## File naming convention and Coding style should be followed
+
