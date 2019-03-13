@@ -23,3 +23,18 @@ The project contains many sample HTML and CSS files as a guide.
 
 ## File naming convention and Coding style should be followed
 
+## Task assignment
+The following pages need to be designed using HTML and CSS:
+
+1. https://www.rickowens.eu/en/NG **Josephine**
+2. https://www.rickowens.eu/en/NG/collections/women-larry-fw19 (Women collections) **Yomi**
+3. https://www.rickowens.eu/en/NG/collections/women-larry-fw19#gallery-12 (Women collections gallery) **Yomi**
+4. https://www.rickowens.eu/en/NG/men/section/all?utf8=%E2%9C%93&gender=men&f%5Bseasons%5D%5B%5D=178&f%5Bseasons%5D%5B%5D=213#product-filters (shopping list of items) **Josephine**
+5. https://www.rickowens.eu/en/NG/men/products/rf00m6761lb-09 (Item Details page) **Yomi**
+6. https://www.rickowens.eu/en/NG/cart (Shopping bag page) - **Yomi**
+7. https://www.rickowens.eu/en/NG/login (Login & Signup page) **Josephine**
+8. https://www.rickowens.eu/it/NG/info/policy - **Josephine**
+9. https://www.rickowens.eu/en/NG/newsletter_subscription/new - **Yomi**
+
+
+
