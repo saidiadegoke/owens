@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#landingImage{
+    background-image: url("https://cdn.rickowens.eu/home_page_images/4025/Schermata_2019-02-27_alle_11.16.55.png");
+    width: 100%;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media(min-width: 576px){
+        height: 430px;
+        background-attachment: fixed;
+        display: none
+
+    }
+}
+
+// #video-div{
+//     display: none;
+//     @media(min-width: 576px){
+//         display: block
+
+//     }
+
+// }
+
+header{
+    width: 100%;
+    height: 53px;
+    padding: 10px;
+    
+    .toggle{
+        width: 47px;
+        height: 100%;
+    }
+}
+
+#mainbody{
+    width: 100%;
+    height: 672px;
+    img{
+        width: 100%
+    }
+}

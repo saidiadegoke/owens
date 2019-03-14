@@ -1,0 +1,177 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;}
+
+
+
+#flex{
+    display: flex;
+    padding: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#heading{
+  text-align: center;
+  flex-grow: 1;
+}
+
+#left img{
+    margin-right: 15px;
+    
+}
+
+.pic1{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (min-width: 578px){
+        justify-content: flex-end;
+        padding-left: 18%
+
+        
+    }
+
+    div{
+        img{
+            
+
+            @media (max-width: 578px){
+                width: 170px;
+                 height: 227px;
+                
+            }
+
+            
+        }
+
+
+    }
+    
+}
+
+#main{
+    @media (min-width: 576px){
+    padding: 50px;
+}  
+}
+
+.text{
+    padding: 10px;
+    letter-spacing: 3px;
+    
+}
+
+#refine{
+    text-align: right;
+    margin-top: 70px;
+}
+
+#menu button{
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    border: none;
+
+    @media(max-width: 578px){
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 578px){
+    #flex #menuImg{
+        display: none;
+    }
+
+    
+}
+
+#shipping{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    @media (max-width: 578px){
+        display: none;
+    }
+}
+
+#flex input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    @media(max-width: 578px){
+        display: none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+footer{
+    text-align: right;
+    font-size: 0.8em;
+}
+
+
+#bag{
+    margin-right: 15px;
+    @media(max-width: 578px){
+        display: none;
+        margin-right: 0;
+   }
+}
+
+@media(min-width: 578px){
+    #left{
+        display: none;
+    }
+}
+
+#menuflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    #filters{
+        text-align: right;
+    }
+}
+
+.categories{
+    color: lightgrey;
+    padding: 10px;
+    
+}
+
+#menulist ul li{
+    letter-spacing: 3px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#filters{
+    margin-top: 10px;
+}
+
+// #menulist{
+//     display: none;
+// }
