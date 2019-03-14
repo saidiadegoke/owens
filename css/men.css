@@ -32,6 +32,7 @@ body {
 @media (min-width: 578px) {
   .pic1 {
     justify-content: flex-end;
+    padding-left: 18%;
   }
 }
 @media (max-width: 578px) {
@@ -49,6 +50,7 @@ body {
 
 .text {
   padding: 10px;
+  letter-spacing: 3px;
 }
 
 #refine {
@@ -103,6 +105,7 @@ body {
 
 footer {
   text-align: right;
+  font-size: 0.8em;
 }
 
 #bag {
@@ -119,6 +122,37 @@ footer {
   #left {
     display: none;
   }
+}
+#menuflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#menuflex #filters {
+  text-align: right;
+}
+
+.categories {
+  color: lightgrey;
+  padding: 10px;
+}
+
+#menulist ul li {
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+#filters {
+  margin-top: 10px;
+}
+
+#menulist {
+  display: none;
 }
 
 /*# sourceMappingURL=men.css.map */
