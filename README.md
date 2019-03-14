@@ -36,5 +36,13 @@ The following pages need to be designed using HTML and CSS:
 8. https://www.rickowens.eu/it/NG/info/policy - **Josephine**
 9. https://www.rickowens.eu/en/NG/newsletter_subscription/new - **Yomi**
 
+## A simple way to write some SCSS for this project
+
+1. First from your command line, navigate to the root folder of the project on your system.
+2. Make sure you import your own scss file in the style.scss file
+3. With [sass](https://sass-lang.com/install) installed, type:   
+`sass --watch css/style.scss css/style.css`
+4. Start editing your scss files and the sass engine will automatically compile and make the styles available to the project.
+
 
 
