@@ -1,16 +1,14 @@
-
-
-
-
-*{
+$fontsize: 10px;
+$spacing: 10px;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;}
-
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
 
 #flex{
     display: flex;
@@ -25,8 +23,63 @@ body{
 }
 
 #left img{
-    margin-right: 15px;
+    margin-right: 15px; 
+}
+
+#search {
+    border: none;
+    border-bottom: 1px solid #444;
+}
+
+#menu button{
+    padding: $spacing * .6 $spacing * 1.5;
+    font-size: $fontsize;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    @media(max-width: 578px){
+        display: none;
+    }
+}
+#menulist {
+    position: absolute;
+    top: $spacing * 25;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            letter-spacing: 3px;
+            font-size: $fontsize;
+            padding: $spacing * .1 0;
+        }
+    }
+}
+
+#content {
+    margin-left: $spacing * 24;
+    @media (min-width: 576px){
+        padding: 50px;
+    }  
+}
+
+#menu-nav {
+    a {
+        color: black;
+        margin-left: $spacing * 0.3;
+    }
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
     
+}
+
+.shop-item {
+    width: 70%;
 }
 
 .pic1{
@@ -47,50 +100,46 @@ body{
 
             @media (max-width: 578px){
                 width: 170px;
-                 height: 227px;
+                height: 227px;
                 
-            }
-
-            
+            }   
         }
-
-
     }
     
-}
-
-#main{
-    @media (min-width: 576px){
-    padding: 50px;
-}  
 }
 
 .text{
     padding: 10px;
     letter-spacing: 3px;
-    
+    text-transform: uppercase;
 }
 
-#refine{
-    text-align: right;
-    margin-top: 70px;
+#menuimg {
+    float: left;
+    width: 23px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-#menu button{
-    width: 100px;
-    height: 30px;
-    margin-left: 30px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    background-color: black;
-    color: white;
-    border: none;
+.hideOnMobile {
+    display: inline-block;
+}
+.mobileOnly {
+    display: none;
+}
 
-    @media(max-width: 578px){
-        display: none;
+@media(max-width: 992px) {
+    .hideOnMobile {
+        display: none !important;
+    }
+    .mobileOnly {
+        display: inherit !important;
+    }
+    #content {
+        margin-left: $spacing * 0;
     }
 }
-
 
 
 @media (min-width: 578px){
@@ -102,7 +151,7 @@ body{
 }
 
 #shipping{
-    font-size: 13px;
+    font-size: $fontsize;
     letter-spacing: 1.5px;
     @media (max-width: 578px){
         display: none;
@@ -158,11 +207,7 @@ footer{
     
 }
 
-#menulist ul li{
-    letter-spacing: 3px;
-    font-size: 13px;
-    padding: 10px;
-}
+
 
 .underline{
     text-decoration: underline;

@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,800|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/men.css">
-    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-    <div id="flex">
-        <div id="shipping">SHIPPING TO NIGERIA | LOGIN </div>
-        <div id="menuImg"> <img src="images/menu.png"></div>
-        <div id="heading">Rick Owen</div>
-        <div id="left"><img src="images/shopping-bag.png"></div>
-        <div id="bag">BAG (0)</div>
-        <div ><input type="text"><img src="images/search.png"></div>
+    <div class="container-fluid">
+    <div class="d-flex mt-3 space-between">
+        <div id="shipping" class="hideOnMobile">SHIPPING TO NIGERIA | LOGIN </div>
+        <a href="#" id="menuicon" class="mobileOnly"><img id="menuimg" src="images/menuicon.png"></a>
+
+        <div id="heading">PETER UTAKA</div>
+        
+        <div>
+            <!--div id="left"><img src="images/shopping-bag.png"></div-->
+            <label for="search">BAG (0)</label>
+            <input class="hideOnMobile" id="search" type="search">
+            <img src="images/search.png">
+        </div>
    </div>
 
-   <div id="menu"><button>MENU</button></div>
+   <div id="menu" class="d-flex justify-content-between mt-md-5 mt-sm-3 hideOnMobile">
+       <button type="button">MENU</button>
+       <div id="menu-nav"><a href="#">1</a><a href="#">2</a> <a href="#">...</a><a href="#">7</a> <a href="#">NEXT</a> › <a href="#">VIEW ALL</a></div>
+    </div>
 
-   <div id="main">
-
-    <div id="refine">REFINE +</div>
-
-   <div class="pic1">
-       <div>
-           <img src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227">
+   <div id="content">
+   <div class="row justify-content-between mt-3">
+       <div class="col">
+           <img class="shop-item" src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227">
            <div class="text">Rick Owens<br>Jacket<br>$1.525</div>
         
         </div>
-       <div>
-           <img src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227">
+       <div class="col">
+           <img class="shop-item" src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227">
            <div class="text">Rick Owens<br>Jacket<br>$1.525</div>
        </div>
-    </div>   
-       
-    <div class="pic1">
-       <div><img src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227"></div>
-       <div><img src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227"></div>
+    </div> 
+    <div class="row justify-content-between mt-3">
+        <div class="col">
+            <img class="shop-item" src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227">
+            <div class="text">Rick Owens<br>Jacket<br>$1.525</div>
+            
+            </div>
+        <div class="col">
+            <img class="shop-item" src="https://cdn.rickowens.eu/products/29459/product/RF00M6761LB09_50_1.jpeg?1493827227">
+            <div class="text">Rick Owens<br>Jacket<br>$1.525</div>
+        </div>
     </div>
-
-
-
 
 </div>
 
-<br> <br> <br>
-
-
-<diV id="menulist">
+<div id="menulist" class="hideOnMobile">
     <div id="menuflex">
         <div class="categories underline" >CLEAR ALL</div>
         <div id="filters" class="underline">Close Filters</div>
@@ -181,11 +187,14 @@
 
 
 </div>
-
+</div>
 
 <footer>
 
-    IT | CONTACTS | PRIVACTY & COOKIE POLICY | TERMS OF USE | NEWS LETTER | INSTAGRAM | TUMBLR | FACEBOOK | YOUTUBE
+    <p>IT | CONTACTS | PRIVACTY & COOKIE POLICY | TERMS OF USE | NEWS LETTER | INSTAGRAM | TUMBLR | FACEBOOK | YOUTUBE</p>
+    <p>
+            OWENSCORP ITALIA SPA , VIA M. PONZA N 4, 10121, TORINO, ITALY, VAT N IT07725270016 , REA- TO915864, 1.000.000€ I.V., PH +390115618697 CUSTOMERCARE@RICKOWENS.EU
+    </p>
 </footer>
 
    
