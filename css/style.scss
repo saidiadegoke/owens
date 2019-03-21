@@ -1,2 +1,22 @@
 @import 'men';
 
+ul.top-bar li {
+    border-right: 1px solid black;
+}
+ul.top-bar li:last-child {
+    border-right: none;
+}
+#header .menu section.mlink {
+    display: block !important;
+}
+.content-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0em;
+}
+.content-left {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 0em;
+}
+
