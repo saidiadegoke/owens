@@ -1,0 +1,8 @@
+@media screen and (min-width: 760px) {
+    #header .logo h1 {
+        width: 260px;
+        top: 0px;
+        left: 50%;
+        right: inherit;
+    }
+}
